@@ -1,0 +1,82 @@
+/* Reset básico de margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e fundo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal */
+.container {
+    text-align: center;
+}
+
+/* Título do jogo */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Controles do jogo */
+.controle {
+    margin-top: 20px;
+}
+
+/* Tabuleiro de Xadrez */
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+    gap: 1px;
+    margin: 0 auto;
+    border: 2px solid #000;
+    width: 500px;
+    height: 500px;
+}
+
+/* Estilo das casas */
+.casa {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Casas claras */
+.casa.clara {
+    background-color: #f0d9b5;
+}
+
+/* Casas escuras */
+.casa.escura {
+    background-color: #b58863;
+}
+
+/* Estilo das peças */
+.peça {
+    font-size: 32px;
+}
+
+/* Botão de reiniciar */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
